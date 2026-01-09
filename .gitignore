@@ -3,8 +3,13 @@
 # dependencies
 node_modules/
 
+# local tooling
+.claude/
+.vscode/
+
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
@@ -21,20 +26,25 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
-# debug
+# debug/logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
 
 # macOS
 .DS_Store
 *.pem
 
 # local env files
-.env*.local
+.env
+.env.*.local
 
-# typescript
+# TypeScript
 *.tsbuildinfo
+
+# coverage
+coverage/
 
 app-example
 
